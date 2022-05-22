@@ -47,10 +47,10 @@ export const Form = () => {
             />
           )}
         />
+        <Button variant="contained" type="submit">
+          送信する
+        </Button>
       </Stack>
-      <Button variant="contained" type="submit">
-        送信する
-      </Button>
     </>
   );
 };
