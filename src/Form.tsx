@@ -22,7 +22,7 @@ export const Form = () => {
   };
 
   //送信の際の関数
-  const onSubmit: SubmitHandler<Inputs> = (data: Inputs) => {
+  const onSubmitTxt: SubmitHandler<Inputs> = (data: Inputs) => {
     console.log(`submit:${data.name}`);
   };
 
@@ -32,7 +32,7 @@ export const Form = () => {
       <Stack
         component="form"
         noValidate
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={handleSubmit(onSubmitTxt)}
         spacing={2}
         sx={{ m: 2, width: "25ch" }}
       >
@@ -53,6 +53,7 @@ export const Form = () => {
         <Button variant="contained" type="submit">
           送信する
         </Button>
+        <p>{}</p>
       </Stack>
     </>
   );
